@@ -3,19 +3,14 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
+import javaImage from '../../public/assets/java.png'; // Caminho para a imagem Java (ajuste conforme necessário)
 
-import Cube from '../components/Cube.jsx';
-import Rings from '../components/Rings.jsx';
-import ReactLogo from '../components/ReactLogo.jsx';
+import springBootImage from '../../public/assets/sp.png'; // Caminho para a imagem do Spring Boot
+import myImage from '/assets/principal.png'; // Ajuste o caminho conforme necessário
+
 import Button from '../components/Button.jsx';
-import Target from '../components/Target.jsx';
 import CanvasLoader from '../components/Loading.jsx';
-import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
-import { HackerRoom } from '../components/HackerRoom.jsx';
-
-import myImage from '/assets/principal.png'; // Adjust the path as needed
-
 
 const Hero = () => {
   // Use media queries to determine screen size
@@ -32,11 +27,20 @@ const Hero = () => {
         </p>
 
         <div className="hero_tag flex flex-col items-center justify-center w-full h-auto text-gray_gradient">
-        <p className="text-center mt-6 text-2xl sm:text-3xl font-bold">
+          <p className="text-center mt-6 text-2xl sm:text-3xl font-bold">
             Creating software with Java
           </p>
-          <img src={myImage} alt="Software Icon" className="w-[80%] max-w-[800px] h-auto" />
-         
+          <img src={myImage} alt="Software Icon" className="w-[80%] max-w-[800px] h-auto relative z-0" />
+      
+          <div className="background-image-container absolute inset-0 flex justify-center items-center z-10">
+            <img src={springBootImage} alt="Spring Boot Logo" className="spring-boot-image" />
+          </div>
+
+           {/* Imagem Java com efeito 3D saltando */}
+           <div className="background-image-container absolute inset-0 flex justify-center items-center z-10">
+            <img src={javaImage} alt="Java Logo" className="java-image" />
+          </div>
+
         </div>
       </div>
 
@@ -46,16 +50,6 @@ const Hero = () => {
             {/* To hide controller */}
             <Leva hidden />
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
-
-
-
-            <group>
-              <Target position={sizes.targetPosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              <Rings position={sizes.ringPosition} />
-              
-            </group>
-
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>

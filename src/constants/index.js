@@ -260,27 +260,60 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+    name: 'Motorola Analist  ',
+    pos: 'Analist and Automation Developer',
+    duration: '2012-2013',
+    title: `
+    **Metas:**
+    
+    • Implementar e manter bancos de dados eficientes para suportar as operações da linha de produção de celulares.
+    • Automatizar processos relacionados à documentação e inserção de dados para otimizar o fluxo de trabalho.
+    • Garantir a segurança e integridade dos dados armazenados.
+    
+    **Desafios:**
+    • Resolver problemas de cadastro e inserção de dados em tempo real, assegurando a continuidade da produção.
+    • Manter a comunicação clara e eficiente com equipes globais, fornecendo suporte técnico em inglês.
+    • Implementar melhorias contínuas em processos e prazos, alinhando-se aos padrões da empresa multinacional.
+    
+    **Tecnologias:**
+    • MySQL, HTML, CSS, JavaScript, Java (para automação de documentos), GitHub.
+    `,
+
     icon: '/assets/framer.svg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
+    name: 'IBM backend Java Developer',
     pos: 'Web Developer',
     duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+    title: `
+**Metas:**
+• Desenvolver no backend com Java para otimizar fluxos de trabalho e melhorar a eficiência das entregas.
+• Realizar migrações de projetos utilizando Java 8/11 e Spring Boot, modernizando e mantendo aplicações internas.
+• Documentação de software: diagramas, requisitos, modelagem UML, entidades.
+• Criar e manter APIs REST conforme necessidades dos clientes e padrões globais de mercado (migração).
+
+**Desafios:**
+• Assegurar a qualidade do código por meio de práticas de refatoração e testes unitários.
+• Garantir a estabilidade e a continuidade operacional de sistemas, realizando a manutenção de servidores e bancos de dados SQL.
+• Gerenciar problemas de software para elaboração de cards de problemas de backlog (Jira).
+• Gerenciamento de acesso interno de páginas, HTML, CSS e JavaScript para garantir uma navegação eficiente para os usuários.
+• Colaborar com equipes globais em ambientes remotos, fornecendo suporte técnico em inglês e resolvendo problemas críticos.
+\n
+**Tecnologias:**
+• Java 8/11/17, Spring Boot, Hibernate, Maven, JPA, Thymeleaf, RestAPI, C/C++.
+• GitHub, GitDesktop, Jira, Teams, Slack, SQL, Scrum, Kanban, HTML, CSS, JavaScript, MySQL Workbench.
+  `,
+
     icon: '/assets/figma.svg',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
+    name: 'Freelance',
+    pos: 'Junior Java Developer',
+    duration: '2022 - 2024 Atual',
     title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
     icon: '/assets/notion.svg',
     animation: 'salute',

@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' adrian@jsmastery.pro');
+    navigator.clipboard.writeText('ernanisan_hv.metals@hotmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -20,13 +20,15 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="assets/e.png" alt="grid-1" className="w-full sm:h-[150px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Hi, I’m Ernani</p>
-              <p className="grid-subtext">
-                With 3 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                and responsive websites.
+              <p className="grid-subtext text-justify">
+                
+              Professional JR graduated in Computer Science from Unifei and passionate about technology, programming, logic, software development and applications
+              , he likes the area and his main base is Java, and can also use React or Angular (developing) I studied at the COTUCA technical college on the Internet IT course where I gained knowledge in: Java, Delphi, PHP, SQL and tools for web services. (htmls, css, JavaScript, JSP), in which I did an internship at MOTOROLA (Lenovo). Current degree in Computer Science Bachelor - Federal University of Itajubá, dealing with technologies and languages ​​such as: Java, Python, React, Angular (JavaScript and Type), PHP, SQL, Spring, Mongo, Firebase, Django, REST API, C/ C++, PostgreeSQL, MySQL, Node, Github, Jira, similar for software development, with IBM/KYNDRYL internship.
+              Hi if you need Java softwares backend and frontend, maybe fullstack web Rest API, automation, i could help you.
               </p>
             </div>
           </div>
@@ -39,8 +41,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                applications
+              My princibal Stack base its Java. I am learning Java since 2010-2013 in my technician colege COTUCA(Unicamp) width Java version 8. In this course i ve been studing CSS, HTML Delphi, JSP, PHP, SQL, C#. Although, my focus was POO (oriented objeted), in Java , building MVC projects, API, Rest, and others some apps in desktop in Java.
+• Even in my University (UNIFEI), I was studing Computer Science with new languages and frameworks like Spring, Django, Angular, Hibernate librarys like React for developing Rest API, web applications with backend and Frontend too and i still study design patters too like Solid, Factor, Abstract, POO concepts: Overloading, Overriding, and reusing components.
               </p>
             </div>
           </div>
@@ -95,7 +97,7 @@ const About = () => {
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">adrian@jsmastery.pro</p>
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">ernanisan_hv.metals@hotmail.com</p>
               </div>
             </div>
           </div>
